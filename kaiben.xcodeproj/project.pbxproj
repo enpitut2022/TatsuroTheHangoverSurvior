@@ -13,6 +13,7 @@
 		CBDF55CE288E707300793CF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BC288E707200793CF0 /* ContentView.swift */; };
 		CBDF55CF288E707300793CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDF55BD288E707300793CF0 /* Assets.xcassets */; };
 		CBDF55D0288E707300793CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDF55BD288E707300793CF0 /* Assets.xcassets */; };
+		E5C81E41288E804B00A33140 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5C81E40288E804B00A33140 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CBDF55C2288E707300793CF0 /* kaiben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaiben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDF55C8288E707300793CF0 /* kaiben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaiben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDF55CA288E707300793CF0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E5C81E40288E804B00A33140 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		CBDF55B5288E707200793CF0 = {
 			isa = PBXGroup;
 			children = (
+				E5C81E40288E804B00A33140 /* README.md */,
 				CBDF55BA288E707200793CF0 /* Shared */,
 				CBDF55C9288E707300793CF0 /* macOS */,
 				CBDF55C3288E707300793CF0 /* Products */,
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C81E41288E804B00A33140 /* README.md in Resources */,
 				CBDF55CF288E707300793CF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
