@@ -12,24 +12,36 @@ struct ContentView: View {
             NavigationView {
                 VStack {
                     NavigationLink(destination:SuggestFoodView(selectedIndex:0)){
-                        Text("Button1")
+                        Text("バナナ型🍌")
+                            .padding()
+                            .font(.title)
                     }
                     NavigationLink(destination:SuggestFoodView(selectedIndex:1)){
-                        Text("Button2")
+                        Text("コロコロ型")
+                            .padding()
+                            .font(.title)
                     }
                     NavigationLink(destination:SuggestFoodView(selectedIndex:2)){
-                        Text("Button3")
+                        Text("ミミズ型🪱")
+                            .padding()
+                            .font(.title)
                     }
                     NavigationLink(destination:SuggestFoodView(selectedIndex:3)){
-                        Text("Button4")
+                        Text("ドロドロ型")
+                            .padding()
+                            .font(.title)
                     }
                     NavigationLink(destination:SuggestFoodView(selectedIndex:4)){
-                        Text("Button5")
+                        Text("ビシャビシャ型")
+                            .padding()
+                            .font(.title)
                     }
                     NavigationLink(destination:SuggestFoodView(selectedIndex:5)){
-                        Text("Button6")
+                        Text("水,コロコロの交互型")
+                            .padding()
+                            .font(.title)
                     }
-                    .navigationTitle("画面1")
+                    .navigationTitle("うんこの形状🍦")
             }
         }
     }
