@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38D948CA288F80ED00EF2721 /* SuggestFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D948C9288F80ED00EF2721 /* SuggestFoodView.swift */; };
+		38D948CB288F80ED00EF2721 /* SuggestFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D948C9288F80ED00EF2721 /* SuggestFoodView.swift */; };
 		CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
 		CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
 		CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BC288E707200793CF0 /* ContentView.swift */; };
@@ -17,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38D948C9288F80ED00EF2721 /* SuggestFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFoodView.swift; sourceTree = "<group>"; };
 		CBDF55BB288E707200793CF0 /* kaibenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaibenApp.swift; sourceTree = "<group>"; };
 		CBDF55BC288E707200793CF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBDF55BD288E707300793CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			children = (
 				CBDF55BB288E707200793CF0 /* kaibenApp.swift */,
 				CBDF55BC288E707200793CF0 /* ContentView.swift */,
+				38D948C9288F80ED00EF2721 /* SuggestFoodView.swift */,
 				CBDF55BD288E707300793CF0 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -180,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D948CA288F80ED00EF2721 /* SuggestFoodView.swift in Sources */,
 				CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */,
 				CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */,
 			);
@@ -189,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D948CB288F80ED00EF2721 /* SuggestFoodView.swift in Sources */,
 				CBDF55CE288E707300793CF0 /* ContentView.swift in Sources */,
 				CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */,
 			);

@@ -11,6 +11,13 @@ struct ContentView: View {
     var body: some View {
         Text("Unching, world!")
             .padding()
+        NavigationView {
+                    NavigationLink(destination: SuggestFoodView()) {
+                        Text("次のビューを表示する")
+                            .font(.system(size: 20))
+                    }
+                    .navigationBarTitle("First View")
+        }
     }
 }
 
