@@ -9,18 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Unching, world!")
-            .padding()
-        
-        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-            
-//
+            NavigationView {
+                VStack {
+                    NavigationLink(destination:SwiftUIView1()){
+                        Text("Button1")
+                    }
+                    NavigationLink(destination:SwiftUIView1()){
+                        Text("Button2")
+                    }
+                    NavigationLink(destination:SwiftUIView1()){
+                        Text("Button3")
+                    }
+                    NavigationLink(destination:SwiftUIView1()){
+                        Text("Button4")
+                    }
+                    NavigationLink(destination:SwiftUIView1()){
+                        Text("Button5")
+                    }
+                    NavigationLink(destination:SwiftUIView1()){
+                        Text("Button6")
+                    }
+                    .navigationTitle("画面1")
+            }
         }
-    
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

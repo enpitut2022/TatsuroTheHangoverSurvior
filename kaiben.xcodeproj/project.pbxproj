@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB95E184288F87EB0083833E /* SwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95E183288F87EB0083833E /* SwiftUIView1.swift */; };
+		CB95E185288F87EB0083833E /* SwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95E183288F87EB0083833E /* SwiftUIView1.swift */; };
 		CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
 		CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
 		CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BC288E707200793CF0 /* ContentView.swift */; };
@@ -17,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB95E183288F87EB0083833E /* SwiftUIView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView1.swift; sourceTree = "<group>"; };
 		CBDF55BB288E707200793CF0 /* kaibenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaibenApp.swift; sourceTree = "<group>"; };
 		CBDF55BC288E707200793CF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBDF55BD288E707300793CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 				CBDF55BB288E707200793CF0 /* kaibenApp.swift */,
 				CBDF55BC288E707200793CF0 /* ContentView.swift */,
 				CBDF55BD288E707300793CF0 /* Assets.xcassets */,
+				CB95E183288F87EB0083833E /* SwiftUIView1.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -182,6 +186,7 @@
 			files = (
 				CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */,
 				CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */,
+				CB95E184288F87EB0083833E /* SwiftUIView1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +196,7 @@
 			files = (
 				CBDF55CE288E707300793CF0 /* ContentView.swift in Sources */,
 				CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */,
+				CB95E185288F87EB0083833E /* SwiftUIView1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +321,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TAV4559STB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -328,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.taniguchi.kaiben;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.ko.taniguchi.kaiben;
 				PRODUCT_NAME = kaiben;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,6 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TAV4559STB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -357,7 +365,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.taniguchi.kaiben;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.ko.taniguchi.kaiben;
 				PRODUCT_NAME = kaiben;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
