@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct SuggestFoodView: View {
-    let selectedIndex :Int=2
+    let selectedIndex :Int
     var body: some View {
         Text("あなたにおすすめの食材は")
         if selectedIndex == 0 {
