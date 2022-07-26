@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SwiftUIView1: View {
+    let selectedIndex: Int
     var body: some View {
         Text("あなたに最適な食材は💩です。")
+        
     }
 }
 

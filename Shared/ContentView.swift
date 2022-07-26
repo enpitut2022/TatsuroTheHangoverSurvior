@@ -11,22 +11,22 @@ struct ContentView: View {
     var body: some View {
             NavigationView {
                 VStack {
-                    NavigationLink(destination:SwiftUIView1()){
+                    NavigationLink(destination:SwiftUIView1(selectedIndex:1)){
                         Text("Button1")
                     }
-                    NavigationLink(destination:SwiftUIView1()){
+                    NavigationLink(destination:SwiftUIView1(selectedIndex:2)){
                         Text("Button2")
                     }
-                    NavigationLink(destination:SwiftUIView1()){
+                    NavigationLink(destination:SwiftUIView1(selectedIndex:3)){
                         Text("Button3")
                     }
-                    NavigationLink(destination:SwiftUIView1()){
+                    NavigationLink(destination:SwiftUIView1(selectedIndex:4)){
                         Text("Button4")
                     }
-                    NavigationLink(destination:SwiftUIView1()){
+                    NavigationLink(destination:SwiftUIView1(selectedIndex:5)){
                         Text("Button5")
                     }
-                    NavigationLink(destination:SwiftUIView1()){
+                    NavigationLink(destination:SwiftUIView1(selectedIndex:6)){
                         Text("Button6")
                     }
                     .navigationTitle("画面1")
