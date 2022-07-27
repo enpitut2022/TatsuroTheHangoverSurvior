@@ -58,12 +58,14 @@ final class SingleSelectableColorViewModel: ObservableObject {
     var cancels_shape: [AnyCancellable] = []
 
     init() {
-        let selected = $selectedColor.sink { (box) in
+        let selected1 = $selectedColor.sink { (box) in
             print("selected color is \(box.rawValue)")
+        }
+        let selected2 = $selectedShape.sink { (box) in
             print("selected shape is \(box.rawValue)")
         }
-        cancels_color.append(selected)
-        cancels_shape.append(selected)
+        cancels_color.append(selected1)
+        cancels_shape.append(selected2)
     }
 }
 
