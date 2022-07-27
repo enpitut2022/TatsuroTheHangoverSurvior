@@ -11,32 +11,32 @@ struct ContentView: View {
     var body: some View {
             NavigationView {
                 VStack {
-                    NavigationLink(destination:SuggestFoodView(selectedIndex:0)){
+                    NavigationLink(destination:SuggestFoodView(selectedShapeIndex:0)){
                         Text("バナナ型🍌")
                             .padding()
                             .font(.title)
                     }
-                    NavigationLink(destination:SuggestFoodView(selectedIndex:1)){
+                    NavigationLink(destination:SuggestFoodView(selectedShapeIndex:1)){
                         Text("コロコロ型")
                             .padding()
                             .font(.title)
                     }
-                    NavigationLink(destination:SuggestFoodView(selectedIndex:2)){
+                    NavigationLink(destination:SuggestFoodView(selectedShapeIndex:2)){
                         Text("ミミズ型🪱")
                             .padding()
                             .font(.title)
                     }
-                    NavigationLink(destination:SuggestFoodView(selectedIndex:3)){
+                    NavigationLink(destination:SuggestFoodView(selectedShapeIndex:3)){
                         Text("ドロドロ型")
                             .padding()
                             .font(.title)
                     }
-                    NavigationLink(destination:SuggestFoodView(selectedIndex:4)){
+                    NavigationLink(destination:SuggestFoodView(selectedShapeIndex:4)){
                         Text("ビシャビシャ型")
                             .padding()
                             .font(.title)
                     }
-                    NavigationLink(destination:SuggestFoodView(selectedIndex:5)){
+                    NavigationLink(destination:SuggestFoodView(selectedShapeIndex:5)){
                         Text("水,コロコロの交互型")
                             .padding()
                             .font(.title)

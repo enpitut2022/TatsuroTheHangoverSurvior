@@ -9,8 +9,8 @@ import SwiftUI
 
 
 struct SuggestFoodView: View {
-    let selectedShapeIndex :Int
-    let selectedColorIndex :Int
+    let selectedShapeIndex :Int 
+    let selectedColorIndex :Int = 0
     let foodText: [[String]] = [
         ["","","","","",""],
         ["龍郎", "味噌汁", "味噌汁", "ヨーグルト", "バナナ", "納豆"],
@@ -29,14 +29,15 @@ struct SuggestFoodView: View {
         Text("あなたにおすすめの食材は")
         Text(foodText[selectedColorIndex][selectedShapeIndex])
             .padding()
-        Image(foodImage[foodText[selectedColorIndex][selectedShapeIndex] ])
+        
+        Image(foodImage[foodText[selectedColorIndex][selectedShapeIndex]] ?? "water")
                 .resizable()
                 .scaledToFit()
         }
-        NavigationLink(destination:SuggestReason(selectedColorIndex:selectedColorIndex,selectedShapeIndex:selectedShapeIndex)){
-            Text("その理由...")
-                .padding()
-                .font(.title)
-        }
-    }
+//        NavigationLink(destination:SuggestReason(selectedColorIndex:selectedColorIndex,selectedShapeIndex:selectedShapeIndex)){
+//            Text("その理由...")
+//                .padding()
+//                .font(.title)
+//    }
 }
+
