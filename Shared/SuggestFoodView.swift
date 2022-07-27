@@ -10,59 +10,21 @@ import SwiftUI
 
 struct SuggestFoodView: View {
     let selectedIndex :Int
+    let foodText: [String] = ["龍郎", "水、バナナ", "バナナ", "ヨーグルト", "味噌汁", "納豆"]
+    let foodImage: [[String]] = [["tatsuro"], ["water", "banana"], ["banana"], ["yogurt"], ["miso_soup"], ["natto"]]
     var body: some View {
         Text("あなたにおすすめの食材は")
-        if selectedIndex == 0 {
-            Text("龍郎")
-                .padding()
-            Image("tatsuro")
-                .resizable()
-                .scaledToFit()
-            
-//            NavigationLink(destination:SuggestReason()){
-//                Text("その理由...")
-//                    .padding()
-//                    .font(.title)
-//            }
-
-        }
-        else if selectedIndex == 1 {
-            Text("水、バナナ")
-                .padding()
-            Image("water")
-                .resizable()
-                .scaledToFit()
-            Image("banana")
+        Text(foodText[selectedIndex])
+            .padding()
+        ForEach(foodImage[selectedIndex], id:\.self) { index in
+            Image(index)
                 .resizable()
                 .scaledToFit()
         }
-        else if selectedIndex == 2 {
-            Text("バナナ")
+        NavigationLink(destination:SuggestReason(selectedIndex:selectedIndex)){
+            Text("その理由...")
                 .padding()
-            Image("banana")
-                .resizable()
-                .scaledToFit()
-        }
-        else if selectedIndex == 3 {
-            Text("ヨーグルト")
-                .padding()
-            Image("yogurt")
-                .resizable()
-                .scaledToFit()
-        }
-        else if selectedIndex == 4 {
-            Text("味噌汁")
-                .padding()
-            Image("miso_soup")
-                .resizable()
-                .scaledToFit()
-        }
-        else if selectedIndex == 5 {
-            Text("納豆")
-                .padding()
-            Image("natto")
-                .resizable()
-                .scaledToFit()
+                .font(.title)
         }
     }
 }
