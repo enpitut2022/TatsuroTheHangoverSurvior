@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+let index_x: Int = 5
+let index_y: Int = 5
+
 struct IndicatorView: View {
     
     let ColorText: [String] = [
@@ -39,7 +42,7 @@ struct IndicatorView: View {
         "type5",
         "type6",
     ]
-    
+        
     let ColorIndex: [Color] =  [
         Color(red: (1/255)*239, green: (1/255)*239, blue: (1/255)*239),
         Color(red: (1/255)*238, green: (1/255)*222, blue: (1/255)*48),
@@ -52,10 +55,47 @@ struct IndicatorView: View {
         Color(red: (1/255)*197, green: (1/255)*22, blue: (1/255)*32),
     ]
     
+    let index_circle = index_x + (index_y - 1) * 7
+    
     var body: some View {
-        LazyVGrid(columns: Array(repeating: GridItem(), count: 7)) { // カラム数の指定
+        HStack(alignment: .center) {
+            Text("要注意")
+                .background(
+                    Rectangle()
+                        .foregroundColor(.red)
+                        .frame(width: 50, height: 50)
+                )
+                .padding(5)
+            Text("注意")
+                .background(
+                    Rectangle()
+                        .foregroundColor(.yellow)
+                        .frame(width: 50, height: 50)
+                )
+                .padding(5)
+            Text("少し注意")
+                .background(
+                    Rectangle()
+                        .foregroundColor(.green)
+                        .frame(width: 50, height: 50)
+                )
+                .padding(5)
+            Text("健康")
+                .background(
+                    Rectangle()
+                        .foregroundColor(.blue)
+                        .frame(width: 50, height: 50)
+                )
+                .padding(5)
+
+        }
+        LazyVGrid(columns: Array(repeating: GridItem(), count: 7)) {
                         ForEach((1...70), id: \.self) { index in
-                            if index == 1 {
+                            if (index == index_circle){
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(width: 25, height: 25)
+                            } else if index == 1 {
                                 Text("色/形")
                                     .frame(width: 60, height: 60)
                             } else if 2 <= index && index <= 7 {
@@ -68,18 +108,24 @@ struct IndicatorView: View {
                                     .frame(width: 25, height: 25)
                                     .cornerRadius(10)
                             } else if (index >= 9 && index <= 14) || (index >= 65 && index <= 70){
-                                Text("要注意")
-                                    .frame(width: 60, height: 60)
+                                Rectangle()
+                                    .foregroundColor(.red)
+                                    .frame(width: 25, height: 25)
                             } else if index >= 16 && index <= 30 && index%7 == 2{
-                                Text("健康")
-                                    .frame(width: 60, height: 60)
+                                Rectangle()
+                                    .foregroundColor(.blue)
+                                    .frame(width: 25, height: 25)
                             } else if (index >= 17 && index <= 35 && index%7 != 0) || (index%7 == 2 && index != 65){
-                                Text("ちょっと注意")
-                                    .frame(width: 60, height: 60)
+                                Rectangle()
+                                    .foregroundColor(.green)
+                                    .frame(width: 25, height: 25)
                             } else {
-                                Text("注意")
-                                    .frame(width: 60, height: 60)
+                                Rectangle()
+                                    .foregroundColor(.yellow)
+                                    .frame(width: 25, height: 25)
                             }
+                            
+                            
                         }
                     }
         }
