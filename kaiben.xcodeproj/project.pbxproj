@@ -13,6 +13,12 @@
 		CB46379328920CA9001873BC /* SuggestFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379128920CA9001873BC /* SuggestFoodView.swift */; };
 		CB46379528921144001873BC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379428921144001873BC /* SwiftUIView.swift */; };
 		CB46379628921144001873BC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379428921144001873BC /* SwiftUIView.swift */; };
+		CB4637A728925FE4001873BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4637A628925FE4001873BC /* HomeView.swift */; };
+		CB4637A828925FE4001873BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4637A628925FE4001873BC /* HomeView.swift */; };
+		CB4637AA28925FFB001873BC /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4637A928925FFB001873BC /* IndicatorView.swift */; };
+		CB4637AB28925FFB001873BC /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4637A928925FFB001873BC /* IndicatorView.swift */; };
+		CB4637AD28926016001873BC /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4637AC28926016001873BC /* PastView.swift */; };
+		CB4637AE28926016001873BC /* PastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4637AC28926016001873BC /* PastView.swift */; };
 		CB95E187288FCF0A0083833E /* SuggestReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95E186288FCF0A0083833E /* SuggestReason.swift */; };
 		CB95E188288FCF0A0083833E /* SuggestReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95E186288FCF0A0083833E /* SuggestReason.swift */; };
 		CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
@@ -28,6 +34,9 @@
 		38D948C9288F80ED00EF2721 /* SuggestFoodView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFoodView2.swift; sourceTree = "<group>"; };
 		CB46379128920CA9001873BC /* SuggestFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFoodView.swift; sourceTree = "<group>"; };
 		CB46379428921144001873BC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		CB4637A628925FE4001873BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CB4637A928925FFB001873BC /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		CB4637AC28926016001873BC /* PastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastView.swift; sourceTree = "<group>"; };
 		CB95E186288FCF0A0083833E /* SuggestReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestReason.swift; sourceTree = "<group>"; };
 		CBDF55BB288E707200793CF0 /* kaibenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaibenApp.swift; sourceTree = "<group>"; };
 		CBDF55BC288E707200793CF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +85,9 @@
 				CBDF55BD288E707300793CF0 /* Assets.xcassets */,
 				CB95E186288FCF0A0083833E /* SuggestReason.swift */,
 				CB46379428921144001873BC /* SwiftUIView.swift */,
+				CB4637A628925FE4001873BC /* HomeView.swift */,
+				CB4637A928925FFB001873BC /* IndicatorView.swift */,
+				CB4637AC28926016001873BC /* PastView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -197,10 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB95E187288FCF0A0083833E /* SuggestReason.swift in Sources */,
+				CB4637A728925FE4001873BC /* HomeView.swift in Sources */,
 				38D948CA288F80ED00EF2721 /* SuggestFoodView2.swift in Sources */,
 				CB46379528921144001873BC /* SwiftUIView.swift in Sources */,
 				CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */,
+				CB4637AD28926016001873BC /* PastView.swift in Sources */,
 				CB46379228920CA9001873BC /* SuggestFoodView.swift in Sources */,
+				CB4637AA28925FFB001873BC /* IndicatorView.swift in Sources */,
 				CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,10 +225,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB95E188288FCF0A0083833E /* SuggestReason.swift in Sources */,
+				CB4637A828925FE4001873BC /* HomeView.swift in Sources */,
 				38D948CB288F80ED00EF2721 /* SuggestFoodView2.swift in Sources */,
 				CB46379628921144001873BC /* SwiftUIView.swift in Sources */,
 				CBDF55CE288E707300793CF0 /* ContentView.swift in Sources */,
+				CB4637AE28926016001873BC /* PastView.swift in Sources */,
 				CB46379328920CA9001873BC /* SuggestFoodView.swift in Sources */,
+				CB4637AB28925FFB001873BC /* IndicatorView.swift in Sources */,
 				CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
