@@ -12,7 +12,6 @@ struct kaibenApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-//            SwiftUIView1()
         }
     }
 }

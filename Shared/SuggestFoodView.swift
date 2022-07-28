@@ -2,7 +2,7 @@
 //  SuggestFoodView.swift
 //  kaiben
 //
-//  Created by 東地亮太 on 2022/07/26.
+//  Created by 谷口功 on 2022/07/28.
 //
 
 import SwiftUI
