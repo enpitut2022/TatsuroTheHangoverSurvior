@@ -61,13 +61,16 @@ struct SuggestFoodView: View {
             .padding()
         
         Image(foodImage[foodText[selectedColorIndex][selectedShapeIndex]] ?? "water")
-                .resizable()
-                .scaledToFit()
+            .resizable()
+            .scaledToFit()
+        NavigationLink(
+            destination:SuggestReason(
+                selectedShapeIndex:selectedShapeIndex, selectedColorIndex:selectedColorIndex)){
+            Text("その理由...")
+                .padding()
+                .font(.title)
         }
-//        NavigationLink(destination:SuggestReason(selectedColorIndex:selectedColorIndex,selectedShapeIndex:selectedShapeIndex)){
-//            Text("その理由...")
-//                .padding()
-//                .font(.title)
-//    }
+    }
+    
 }
 

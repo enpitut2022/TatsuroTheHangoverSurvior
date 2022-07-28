@@ -21,10 +21,10 @@ struct SuggestFoodView2: View {
                 .resizable()
                 .scaledToFit()
         }
-        NavigationLink(destination:SuggestReason(selectedIndex:selectedIndex)){
-            Text("その理由...")
-                .padding()
-                .font(.title)
-        }
+//        NavigationLink(destination:SuggestReason(selectedIndex:selectedIndex)){
+//            Text("その理由...")
+//                .padding()
+//                .font(.title)
+//        }
     }
 }
