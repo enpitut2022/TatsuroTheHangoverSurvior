@@ -39,11 +39,18 @@ enum ShapeType: String {
 struct ContentView: View {
     @ObservedObject var viewModel = SingleSelectableColorViewModel()
     var body: some View {
-        VStack {
-            SingleSelectableColorView(selectedColor: $viewModel.selectedColor)
-            Text("うんちの色： \(viewModel.selectedColor.rawValue)")
-            SingleSelectableShapeView(selectedShape: $viewModel.selectedShape)
-            Text("うんちの形： \(viewModel.selectedShape.rawValue)")
+        NavigationView {
+                VStack {
+                    SingleSelectableColorView(selectedColor: $viewModel.selectedColor)
+                    Text("うんちの色： \(viewModel.selectedColor.rawValue)")
+                    SingleSelectableShapeView(selectedShape: $viewModel.selectedShape)
+                    Text("うんちの形： \(viewModel.selectedShape.rawValue)")
+                    NavigationLink(destination:SuggestFoodView(
+                        selectedColorIndex: viewModel.selectedColor.rawValue,
+                        selectedShapeIndex: viewModel.selectedShape.rawValue)){
+                            Text("決定！！！").padding().font(.title)
+                        }
+                }
         }
     }
 }
@@ -198,29 +205,5 @@ struct SingleSelectableShapeView: View {
 //        }
 //    }
 //}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
 
 //____________________________________________________________________________________
-
-//PreviewProvider1→View1
-//struct ParentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ParentView()
-//    }
-//}
-
-//PreviewProvider2
-//struct SingleSelectableColorView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        //うんこの色の選択
-//        SingleSelectableColorView(selectedColor: .constant(.marshmallow))
-//        //うんこの形の選択
-//        SingleSelectableShapeView(selectedColor: .constant(.marshmallow))
-//
-//    }
-//}
