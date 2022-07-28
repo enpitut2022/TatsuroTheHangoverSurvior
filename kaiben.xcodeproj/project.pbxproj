@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38D948CA288F80ED00EF2721 /* SuggestFoodView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D948C9288F80ED00EF2721 /* SuggestFoodView2.swift */; };
+		38D948CB288F80ED00EF2721 /* SuggestFoodView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D948C9288F80ED00EF2721 /* SuggestFoodView2.swift */; };
+		CB46379228920CA9001873BC /* SuggestFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379128920CA9001873BC /* SuggestFoodView.swift */; };
+		CB46379328920CA9001873BC /* SuggestFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379128920CA9001873BC /* SuggestFoodView.swift */; };
+		CB46379528921144001873BC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379428921144001873BC /* SwiftUIView.swift */; };
+		CB46379628921144001873BC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB46379428921144001873BC /* SwiftUIView.swift */; };
+		CB95E187288FCF0A0083833E /* SuggestReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95E186288FCF0A0083833E /* SuggestReason.swift */; };
+		CB95E188288FCF0A0083833E /* SuggestReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95E186288FCF0A0083833E /* SuggestReason.swift */; };
 		CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
 		CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BB288E707200793CF0 /* kaibenApp.swift */; };
 		CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDF55BC288E707200793CF0 /* ContentView.swift */; };
@@ -17,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38D948C9288F80ED00EF2721 /* SuggestFoodView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFoodView2.swift; sourceTree = "<group>"; };
+		CB46379128920CA9001873BC /* SuggestFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFoodView.swift; sourceTree = "<group>"; };
+		CB46379428921144001873BC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		CB95E186288FCF0A0083833E /* SuggestReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestReason.swift; sourceTree = "<group>"; };
 		CBDF55BB288E707200793CF0 /* kaibenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kaibenApp.swift; sourceTree = "<group>"; };
 		CBDF55BC288E707200793CF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBDF55BD288E707300793CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +71,11 @@
 			children = (
 				CBDF55BB288E707200793CF0 /* kaibenApp.swift */,
 				CBDF55BC288E707200793CF0 /* ContentView.swift */,
+				CB46379128920CA9001873BC /* SuggestFoodView.swift */,
+				38D948C9288F80ED00EF2721 /* SuggestFoodView2.swift */,
 				CBDF55BD288E707300793CF0 /* Assets.xcassets */,
+				CB95E186288FCF0A0083833E /* SuggestReason.swift */,
+				CB46379428921144001873BC /* SwiftUIView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -180,7 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB95E187288FCF0A0083833E /* SuggestReason.swift in Sources */,
+				38D948CA288F80ED00EF2721 /* SuggestFoodView2.swift in Sources */,
+				CB46379528921144001873BC /* SwiftUIView.swift in Sources */,
 				CBDF55CD288E707300793CF0 /* ContentView.swift in Sources */,
+				CB46379228920CA9001873BC /* SuggestFoodView.swift in Sources */,
 				CBDF55CB288E707300793CF0 /* kaibenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB95E188288FCF0A0083833E /* SuggestReason.swift in Sources */,
+				38D948CB288F80ED00EF2721 /* SuggestFoodView2.swift in Sources */,
+				CB46379628921144001873BC /* SwiftUIView.swift in Sources */,
 				CBDF55CE288E707300793CF0 /* ContentView.swift in Sources */,
+				CB46379328920CA9001873BC /* SuggestFoodView.swift in Sources */,
 				CBDF55CC288E707300793CF0 /* kaibenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MU4WL482ZB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -328,7 +353,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.taniguchi.kaiben;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.ko.tuchi.kaiben;
 				PRODUCT_NAME = kaiben;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,6 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MU4WL482ZB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -357,7 +383,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.taniguchi.kaiben;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.tsukuba.ko.tuchi.kaiben;
 				PRODUCT_NAME = kaiben;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
