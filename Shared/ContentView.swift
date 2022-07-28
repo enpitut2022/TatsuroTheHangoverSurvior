@@ -184,7 +184,7 @@ struct SingleSelectableShapeView: View {
             HStack(alignment: .center) {
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type1, image: "type1")//バナナ
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type2, image: "type2")//コロコロ
-                ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type3, image: "type3")//ミミズ
+                ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type3, image: "type3-3")//ミミズ
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type4, image: "type4")//ドロドロ
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type5, image: "type5")//ビシャビシャ
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type6, image: "type6")//水,コロコロの交互型
