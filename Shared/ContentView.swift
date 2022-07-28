@@ -11,7 +11,7 @@ import Combine
 
 //列挙型変数1
 enum ColorType: String {
-    case unknown
+//    case unknown
     case marshmallow = "マシュマロ"
     case lemone = "レモン"
     case orange = "オレンジ"
@@ -25,7 +25,7 @@ enum ColorType: String {
 
 //列挙型変数2
 enum ShapeType: String {
-    case unknown
+//    case unknown
     case type1 = "バナナ型"
     case type2 = "コロコロ型"
     case type3 = "ミミズ型"
@@ -87,8 +87,8 @@ struct ContentView: View {
 
 //ターミナルの出力
 final class SingleSelectableColorViewModel: ObservableObject {
-    @Published var selectedColor: ColorType = .unknown
-    @Published var selectedShape: ShapeType = .unknown
+    @Published var selectedColor: ColorType = .orange
+    @Published var selectedShape: ShapeType = .type1
     var cancels_color: [AnyCancellable] = []
     var cancels_shape: [AnyCancellable] = []
 
