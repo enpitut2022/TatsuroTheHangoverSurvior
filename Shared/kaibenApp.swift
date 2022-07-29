@@ -11,7 +11,7 @@ import SwiftUI
 struct kaibenApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContentView()
         }
     }
 }
