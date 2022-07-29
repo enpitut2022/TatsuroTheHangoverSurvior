@@ -34,52 +34,43 @@ enum ShapeType: String {
     case type6 = "水,コロコロの交互型"
 }
 
-let ColorText: [String] = [
-    "マシュマロ",
-     "レモン",
-     "オレンジ",
-     "かつおぶし",
-     "カレー",
-     "チョコレート",
-     "モロヘイヤ",
-     "いかすみ",
-     "ハバネロ"
-     ]
-
-
-let ShapeText: [String] =  [
-    "バナナ型",
-    "コロコロ型",
-    "ミミズ型",
-    "ドロドロ型",
-    "ビシャビシャ型",
-    "水,コロコロの交互型",
-]
-
 //____________________________________________________________________________________
 
 //View1
 struct ContentView: View {
     @ObservedObject var viewModel = SingleSelectableColorViewModel()
-    
+    @Environment(\.managedObjectContext) var moc
     var body: some View {
-        NavigationView {
                 VStack {
                     SingleSelectableColorView(selectedColor: $viewModel.selectedColor)
                     Text("うんちの色： \(viewModel.selectedColor.rawValue)")
                     SingleSelectableShapeView(selectedShape: $viewModel.selectedShape)
                     Text("うんちの形： \(viewModel.selectedShape.rawValue)")
+                    Button("登録"){
+                        let data=Pastdatas(context:moc)
+                        data.id=UUID()
+                        data.color=viewModel.selectedColor.rawValue
+                        data.shape=viewModel.selectedShape.rawValue
+                        data.createdAt=Date()
+                        try? moc.save()
+                    }
                     NavigationLink(
                         destination:SuggestFoodView(
                             selectedShape: viewModel.selectedShape.rawValue,
                             selectedColor: viewModel.selectedColor.rawValue
                         )
                     ){
-                            Text("決定！！！").padding().font(.title)
+                        Button("登録"){
+                            let data=Pastdatas(context:moc)
+                            data.id=UUID()
+                            data.color=viewModel.selectedColor.rawValue
+                            data.shape=viewModel.selectedShape.rawValue
+                            data.createdAt=Date()
+                            try? moc.save()
+                        }
                         }
                     
                 }
-        }
     }
 }
 

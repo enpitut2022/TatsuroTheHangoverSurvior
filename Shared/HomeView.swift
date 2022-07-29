@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    @FetchRequest(sortDescriptors: []) var datas: FetchedResults<Pastdatas>
     var body: some View {
         NavigationView {
                 VStack {
-                    
+                    List(datas) { data in
+                                    Text(data.color ?? "Unknown")
+                                }
                     NavigationLink(destination:IndicatorView())
                     {Text("うんこの指標").padding().font(.title)}
                     
