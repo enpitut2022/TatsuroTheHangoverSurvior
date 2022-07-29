@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct PastView: View {
+    @FetchRequest(
+            entity: Pastdatas.entity(),
+            sortDescriptors: []
+        ) var datas: FetchedResults<Pastdatas>
+    @Environment(\.managedObjectContext) var moc
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(datas.reversed(), id: \.self){data in
+                    Text(data.color ?? "Unknown")
+            }.onDelete(perform: removeTask)
+        }
+    }
+    private func removeTask(offsets: IndexSet) {
+        offsets.forEach { index in
+                    moc.delete(datas[index])
+                }
+            // 保存を忘れない
+                try? moc.save()
     }
 }
 
-struct PastView_Previews: PreviewProvider {
-    static var previews: some View {
-        PastView()
-    }
-}

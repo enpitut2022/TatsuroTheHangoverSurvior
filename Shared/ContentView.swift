@@ -40,6 +40,11 @@ enum ShapeType: String {
 struct ContentView: View {
     @ObservedObject var viewModel = SingleSelectableColorViewModel()
     @Environment(\.managedObjectContext) var moc
+    @Environment(\.presentationMode) var presentation
+    
+//    private let page: Int
+//    let value = 1
+    
     var body: some View {
                 VStack {
                     SingleSelectableColorView(selectedColor: $viewModel.selectedColor)
@@ -53,26 +58,39 @@ struct ContentView: View {
                         data.shape=viewModel.selectedShape.rawValue
                         data.createdAt=Date()
                         try? moc.save()
+                        
+                        self.presentation.wrappedValue.dismiss()
                     }
-                    NavigationLink(
-                        destination:SuggestFoodView(
-                            selectedShape: viewModel.selectedShape.rawValue,
-                            selectedColor: viewModel.selectedColor.rawValue
-                        )
-                    ){
-                        Button("登録"){
-                            let data=Pastdatas(context:moc)
-                            data.id=UUID()
-                            data.color=viewModel.selectedColor.rawValue
-                            data.shape=viewModel.selectedShape.rawValue
-                            data.createdAt=Date()
-                            try? moc.save()
-                        }
-                        }
+//                    NavigationLink(
+//                        destination:SuggestFoodView(
+//                            selectedShape: viewModel.selectedShape.rawValue,
+//                            selectedColor: viewModel.selectedColor.rawValue
+//                        )
+//                    ){
+//                        Text("画面遷移")
+//                    }
+//                    NavigationLink(
+//                        destination:SuggestFoodView(
+//                            selectedShape: viewModel.selectedShape.rawValue,
+//                            selectedColor: viewModel.selectedColor.rawValue
+//                        ),
+//                        tag: value, selection: $page
+//                    ){
+//                        EmptyView()
+//                    }
+//                    Button("登録"){
+//                        let data=Pastdatas(context:moc)
+//                        data.id=UUID()
+//
+//                        data.color=viewModel.selectedColor.rawValue
+//                        data.shape=viewModel.selectedShape.rawValue
+//                        data.createdAt=Date()
+//                        try? moc.save()
+//                        $page = value
+//                    }
                     
                 }
     }
-}
 
 //____________________________________________________________________________________
 
@@ -181,6 +199,7 @@ struct SingleSelectableShapeView: View {
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type6, image: "type6")//水,コロコロの交互型
             }
     }
+}
 }
 
 //____________________________________________________________________________________

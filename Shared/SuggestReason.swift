@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct SuggestReason: View {
-    let selectedShapeIndex: Int
-    let selectedColorIndex: Int
+//    let selectedShapeIndex: Int
+//    let selectedColorIndex: Int
+    
+    let selectedShape :String
+    let selectedColor :String
+    
+    let ConvertShapeShapeIndex: [String:Int] = [
+        "バナナ型": 0,
+        "コロコロ型": 1,
+        "ミミズ型": 2,
+        "ドロドロ型": 3,
+        "ビシャビシャ型": 4,
+        "水,コロコロの交互型": 5
+    ]
+    
+    let ConvertColorColorIndex: [String:Int] = [
+        "マシュマロ": 0,
+        "レモン": 1,
+        "オレンジ": 2,
+        "かつおぶし": 3,
+        "カレー": 4,
+        "チョコレート": 5,
+        "モロヘイヤ": 6,
+        "いかすみ": 7,
+        "ハバネロ": 8
+    ]
+    
     let shapeDescription: [String] = ["最高の体調です！",
                                  "冷たいものの食べ過ぎ飲み過ぎ、お腹を冷やしすぎが原因。飲食物の温度を気にしよう！",
                                  "生の卵や肉、生魚、牡蠣類を食べた覚えはない？腹痛を伴っているなら、ストレスや暴飲暴食で自律神経が乱れているのかも。落ち着いた生活をして、睡眠をちゃんと取ろう！",
@@ -28,6 +53,10 @@ struct SuggestReason: View {
     var body: some View {
         let bounds = UIScreen.main.bounds
         let height = bounds.height
+        
+        let selectedShapeIndex :Int = ConvertShapeShapeIndex[selectedShape] ?? -1
+        let selectedColorIndex :Int = ConvertColorColorIndex[selectedColor] ?? -1
+        
         VStack(alignment: .center) {
             Text("何でそうなったのか：")
                 .padding()
