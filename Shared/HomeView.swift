@@ -81,7 +81,12 @@ struct HomeView: View {
                             Text("あなたの状態")
                                 .padding().font(.title)
                         }
-                        NavigationLink(destination:IndicatorView())
+                        NavigationLink(
+                            destination:IndicatorView(
+                                selectedShape: datas[0].shape ?? "unknown",
+                                selectedColor: datas[0].color ?? "unknown"
+                            )
+                        )
                         {Text("うんこの指標")
                             .padding().font(.title)}
                     }
