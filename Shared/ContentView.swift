@@ -34,54 +34,65 @@ enum ShapeType: String {
     case type6 = "水,コロコロの交互型"
 }
 
-let ColorText: [String] = [
-    "マシュマロ",
-     "レモン",
-     "オレンジ",
-     "かつおぶし",
-     "カレー",
-     "チョコレート",
-     "モロヘイヤ",
-     "いかすみ",
-     "ハバネロ"
-     ]
-
-
-let ShapeText: [String] =  [
-    "バナナ型",
-    "コロコロ型",
-    "ミミズ型",
-    "ドロドロ型",
-    "ビシャビシャ型",
-    "水,コロコロの交互型",
-]
-
 //____________________________________________________________________________________
 
 //View1
 struct ContentView: View {
     @ObservedObject var viewModel = SingleSelectableColorViewModel()
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.presentationMode) var presentation
+    
+//    private let page: Int
+//    let value = 1
     
     var body: some View {
-        NavigationView {
                 VStack {
                     SingleSelectableColorView(selectedColor: $viewModel.selectedColor)
                     Text("うんちの色： \(viewModel.selectedColor.rawValue)")
                     SingleSelectableShapeView(selectedShape: $viewModel.selectedShape)
                     Text("うんちの形： \(viewModel.selectedShape.rawValue)")
-                    NavigationLink(
-                        destination:SuggestFoodView(
-                            selectedShape: viewModel.selectedShape.rawValue,
-                            selectedColor: viewModel.selectedColor.rawValue
-                        )
-                    ){
-                            Text("決定！！！").padding().font(.title)
-                        }
+                    Button("登録"){
+                        let data=Pastdatas(context:moc)
+                        data.id=UUID()
+                        data.color=viewModel.selectedColor.rawValue
+                        data.shape=viewModel.selectedShape.rawValue
+                        data.createdAt=Date()
+                        try? moc.save()
+                        
+                        self.presentation.wrappedValue.dismiss()
+                    }
+                    .font(.title)
+                    .padding()
+//                    NavigationLink(
+//                        destination:SuggestFoodView(
+//                            selectedShape: viewModel.selectedShape.rawValue,
+//                            selectedColor: viewModel.selectedColor.rawValue
+//                        )
+//                    ){
+//                        Text("画面遷移")
+//                    }
+//                    NavigationLink(
+//                        destination:SuggestFoodView(
+//                            selectedShape: viewModel.selectedShape.rawValue,
+//                            selectedColor: viewModel.selectedColor.rawValue
+//                        ),
+//                        tag: value, selection: $page
+//                    ){
+//                        EmptyView()
+//                    }
+//                    Button("登録"){
+//                        let data=Pastdatas(context:moc)
+//                        data.id=UUID()
+//
+//                        data.color=viewModel.selectedColor.rawValue
+//                        data.shape=viewModel.selectedShape.rawValue
+//                        data.createdAt=Date()
+//                        try? moc.save()
+//                        $page = value
+//                    }
                     
                 }
-        }
     }
-}
 
 //____________________________________________________________________________________
 
@@ -190,6 +201,7 @@ struct SingleSelectableShapeView: View {
                 ShapeView(selectedShape: $selectedShape, color: .red, boxType: .type6, image: "type6")//水,コロコロの交互型
             }
     }
+}
 }
 
 //____________________________________________________________________________________
