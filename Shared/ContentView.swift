@@ -61,6 +61,8 @@ struct ContentView: View {
                         
                         self.presentation.wrappedValue.dismiss()
                     }
+                    .font(.title)
+                    .padding()
 //                    NavigationLink(
 //                        destination:SuggestFoodView(
 //                            selectedShape: viewModel.selectedShape.rawValue,
